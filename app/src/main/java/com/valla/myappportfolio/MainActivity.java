@@ -2,7 +2,6 @@ package com.valla.myappportfolio;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.Gravity;
 import android.view.View;
 import android.widget.Toast;
 
@@ -20,22 +19,22 @@ public class MainActivity extends AppCompatActivity {
      */
     public void openApp(View view) {
         switch (view.getId()) {
-            case R.id.button1:
+            case R.id.buttonSpotify:
                 displayToast("Spotify Streamer");
                 break;
-            case R.id.button2:
+            case R.id.buttonScores:
                 displayToast("Scores");
                 break;
-            case R.id.button3:
+            case R.id.buttonLibrary:
                 displayToast("Library");
                 break;
-            case R.id.button4:
+            case R.id.buttonBuild:
                 displayToast("Build it Bigger");
                 break;
-            case R.id.button5:
+            case R.id.buttonReader:
                 displayToast("XYZ Reader");
                 break;
-            case R.id.button6:
+            case R.id.buttonCapstone:
                 displayToast("Capstone");
                 break;
             default:
