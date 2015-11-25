@@ -2,7 +2,9 @@ package com.valla.myappportfolio;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.Gravity;
 import android.view.View;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -14,34 +16,38 @@ public class MainActivity extends AppCompatActivity {
 
     /**
      * Called when user touches the button
-     *
-     * @param view - view that fired the touch event
+     * @param view which fires the touch event
      */
     public void openApp(View view) {
         switch (view.getId()) {
             case R.id.button1:
-                displayToast("");
+                displayToast("Spotify Streamer");
                 break;
             case R.id.button2:
-                displayToast("");
+                displayToast("Scores");
                 break;
             case R.id.button3:
-                displayToast("");
+                displayToast("Library");
                 break;
             case R.id.button4:
-                displayToast("");
+                displayToast("Build it Bigger");
                 break;
             case R.id.button5:
-                displayToast("");
+                displayToast("XYZ Reader");
                 break;
             case R.id.button6:
-                displayToast("");
+                displayToast("Capstone");
                 break;
             default:
         }
     }
 
-    public void displayToast(String toastMessage){
-
+    /**
+     * Display Toast with App's Name
+     * @param appName Application's Name
+     */
+    public void displayToast(String appName) {
+        String toastMessage = "This button will launch my " + appName + " App";
+        Toast.makeText(getApplicationContext(), toastMessage, Toast.LENGTH_SHORT).show();
     }
 }
